@@ -30,30 +30,38 @@ class StatsScreen extends StatelessWidget {
                         ),
                         Divider(),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "1",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/Fb.png", width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Fenerbahce",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/Fb.png", width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Fenerbahce",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 174,
-                            ),
-                            Text(
-                              "59",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "59",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -61,30 +69,38 @@ class StatsScreen extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "2",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "2",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/Gs.png", width: 50),
+                                SizedBox(
+                                  width: 11,
+                                ),
+                                Text(
+                                  "Galatasaray",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/Gs.png", width: 50),
-                            SizedBox(
-                              width: 11,
-                            ),
-                            Text(
-                              "Galatasaray",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 170,
-                            ),
-                            Text(
-                              "46",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "46",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -104,30 +120,39 @@ class StatsScreen extends StatelessWidget {
                         ),
                         Divider(),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "1",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/pendik.png",
+                                    width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Siltas Yapi Pendikspor",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/pendik.png", width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Siltas Yapi Pendikspor",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 92,
-                            ),
-                            Text(
-                              "46",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "46",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -135,31 +160,39 @@ class StatsScreen extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "2",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "2",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/kasimpasa.png",
+                                    width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Kasimpasa",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/kasimpasa.png",
-                                width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Kasimpasa",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 178,
-                            ),
-                            Text(
-                              "43",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "43",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -179,30 +212,38 @@ class StatsScreen extends StatelessWidget {
                         ),
                         Divider(),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "1",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/Fb.png", width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Fenerbahce",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/Fb.png", width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Fenerbahce",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 153,
-                            ),
-                            Text(
-                              "%83",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "%83",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -210,30 +251,38 @@ class StatsScreen extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "2",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "2",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/bjk.png", width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Besiktas",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/bjk.png", width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Besiktas",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 174,
-                            ),
-                            Text(
-                              "%83",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "%83",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -252,30 +301,39 @@ class StatsScreen extends StatelessWidget {
                           ],
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "1",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/dzeko.png",
+                                    width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Edin Dzeko",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/dzeko.png", width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Edin Dzeko",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 176,
-                            ),
-                            Text(
-                              "16",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "16",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -283,30 +341,39 @@ class StatsScreen extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "2",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "2",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/mauro.png",
+                                    width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Mauro Icardi",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/mauro.png", width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Mauro Icardi",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 165,
-                            ),
-                            Text(
-                              "13",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "13",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -326,30 +393,39 @@ class StatsScreen extends StatelessWidget {
                         ),
                         Divider(),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "1",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/haris7.png",
+                                    width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Haris Hajradinovic",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/haris7.png", width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Haris Hajradinovic",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 134,
-                            ),
-                            Text(
-                              "9",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "9",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -357,31 +433,39 @@ class StatsScreen extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "2",
-                              style: TextStyle(fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "2",
+                                  style: TextStyle(fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Image.asset("assets/images/sebastian.jpeg",
+                                    width: 50),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text(
+                                  "Sebastian Szymanski",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Image.asset("assets/images/sebastian.jpeg",
-                                width: 50),
-                            SizedBox(
-                              width: 12,
-                            ),
-                            Text(
-                              "Sebastian Szymanski",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            SizedBox(
-                              width: 112,
-                            ),
-                            Text(
-                              "8",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            Row(
+                              children: [
+                                Text(
+                                  "8",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                              ],
                             )
                           ],
                         ),
