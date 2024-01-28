@@ -5,101 +5,393 @@ class StatsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          // appBar: AppBar(
-          //   backgroundColor: Colors.red[900],
-          //   title: Center(
-          //     child: Text("İstatistikler"),
-          //   ),
-          // ),
-          body: Column(
+    return Scaffold(
+      body: SafeArea(
+          child: Column(
         children: [
           Expanded(
-              child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(color: Colors.grey[200]),
-            child: Column(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(top: 130),
-                  width: double.infinity,
-                  height: 550,
-                  decoration: BoxDecoration(color: Colors.grey[300]),
-                  child: Padding(
-                    padding: const EdgeInsets.all(18.0),
-                    child: Column(
+            child: Container(
+              padding: EdgeInsets.all(10),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Column(
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Column(
-                              children: [
-                                Text(
-                                  "2023/24 Enler",
-                                  style: TextStyle(
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                SizedBox(
-                                  height: 20,
-                                ),
-                                Image.asset(
-                                  "assets/images/dzeko.png",
-                                  width: 100,
-                                ),
-                                SizedBox(
-                                  height: 5,
-                                ),
-                                Text(
-                                  "Gol Krallığı",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 18),
-                                ),
-                                Text(
-                                  "16",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24),
-                                ),
-                              ],
+                            Text(
+                              "En Cok Gol Atan",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
                             ),
-                            Container(
-                              margin: EdgeInsets.only(top: 49, left: 60),
-                              child: Column(
-                                children: [
-                                  Image.asset(
-                                    "assets/images/haris7.png",
-                                    width: 100,
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    "Asist Krallığı",
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.normal,
-                                        fontSize: 18),
-                                  ),
-                                  Text(
-                                    "9",
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 24),
-                                  ),
-                                ],
-                              ),
+                            Text("Gol"),
+                          ],
+                        ),
+                        Divider(),
+                        Row(
+                          children: [
+                            Text(
+                              "1",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/Fb.png", width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Fenerbahce",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 174,
+                            ),
+                            Text(
+                              "59",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "2",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/Gs.png", width: 50),
+                            SizedBox(
+                              width: 11,
+                            ),
+                            Text(
+                              "Galatasaray",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 170,
+                            ),
+                            Text(
+                              "46",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 50,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "En Cok Gol Yiyen",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
+                            Text("Gol"),
+                          ],
+                        ),
+                        Divider(),
+                        Row(
+                          children: [
+                            Text(
+                              "1",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/pendik.png", width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Siltas Yapi Pendikspor",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 92,
+                            ),
+                            Text(
+                              "46",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "2",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/kasimpasa.png",
+                                width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Kasimpasa",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 178,
+                            ),
+                            Text(
+                              "43",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 50,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Basarili Pas Orani",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
+                            Text("Pas"),
+                          ],
+                        ),
+                        Divider(),
+                        Row(
+                          children: [
+                            Text(
+                              "1",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/Fb.png", width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Fenerbahce",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 153,
+                            ),
+                            Text(
+                              "%83",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "2",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/bjk.png", width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Besiktas",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 174,
+                            ),
+                            Text(
+                              "%83",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 50,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Gol Kralligi",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
+                            Text("Gol"),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "1",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/dzeko.png", width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Edin Dzeko",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 176,
+                            ),
+                            Text(
+                              "16",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "2",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/mauro.png", width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Mauro Icardi",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 165,
+                            ),
+                            Text(
+                              "13",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 50,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Assist Kralligi",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 15),
+                            ),
+                            Text("Assist"),
+                          ],
+                        ),
+                        Divider(),
+                        Row(
+                          children: [
+                            Text(
+                              "1",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/haris7.png", width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Haris Hajradinovic",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 134,
+                            ),
+                            Text(
+                              "9",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "2",
+                              style: TextStyle(fontSize: 25),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Image.asset("assets/images/sebastian.jpeg",
+                                width: 50),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Text(
+                              "Sebastian Szymanski",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            SizedBox(
+                              width: 112,
+                            ),
+                            Text(
+                              "8",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 25),
                             )
                           ],
                         ),
                       ],
-                    ),
-                  ),
+                    )
+                  ],
                 ),
-              ],
+              ),
             ),
-          )),
+          ),
           Container(
             width: double.infinity,
             height: 65,
