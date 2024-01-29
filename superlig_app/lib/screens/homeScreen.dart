@@ -168,21 +168,26 @@ class HomeScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                  Column(
-                    children: [
-                      Icon(
-                        Icons.sports_soccer,
-                        color: Color(0xFF7D7C7C),
-                      ),
-                      Text(
-                        "Haftanın Maçları",
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/fikstur');
+                    },
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.sports_soccer,
                           color: Color(0xFF7D7C7C),
                         ),
-                      )
-                    ],
+                        Text(
+                          "Haftanın Maçları",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF7D7C7C),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   InkWell(
                     onTap: () => Navigator.pushNamed(context, '/puan'),
