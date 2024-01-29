@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:superlig_app/fiksturScreen.dart';
 
 import 'screens/homeScreen.dart';
 import 'screens/puanDurumu.dart';
@@ -34,6 +35,7 @@ class superLigApp extends StatelessWidget {
         '/tff_news5': (context) => TffNews5Screen(),
         '/tff_news6': (context) => TffNews6Screen(),
         '/puan': (context) => PuanDurumu(),
+        '/fikstur': (context) => FiksturScreen(),
       },
       home: HomeScreen(),
     );

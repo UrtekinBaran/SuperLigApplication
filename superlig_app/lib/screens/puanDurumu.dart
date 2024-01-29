@@ -181,7 +181,7 @@ class PuanDurumu extends StatelessWidget {
                           ),
                           Text("8"),
                           SizedBox(
-                            width: 16,
+                            width: 17,
                           ),
                           Text(
                             "37",
