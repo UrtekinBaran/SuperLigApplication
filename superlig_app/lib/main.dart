@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'screens/homeScreen.dart';
+import 'screens/puanDurumu.dart';
 import 'screens/statsScreen.dart';
 import 'screens/tff_news1.dart';
 import 'screens/tff_news2.dart';
@@ -31,6 +33,7 @@ class superLigApp extends StatelessWidget {
         '/tff_news4': (context) => TffNews4Screen(),
         '/tff_news5': (context) => TffNews5Screen(),
         '/tff_news6': (context) => TffNews6Screen(),
+        '/puan': (context) => PuanDurumu(),
       },
       home: HomeScreen(),
     );

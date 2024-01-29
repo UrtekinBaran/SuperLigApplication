@@ -516,20 +516,23 @@ class StatsScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                  Column(
-                    children: [
-                      Icon(
-                        Icons.format_list_numbered_outlined,
-                        color: Color(0xFF7D7C7C),
-                      ),
-                      Text(
-                        "Puan Durumu",
-                        style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF7D7C7C)),
-                      )
-                    ],
+                  InkWell(
+                    onTap: () => Navigator.pushNamed(context, '/puan'),
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.format_list_numbered_outlined,
+                          color: Color(0xFF7D7C7C),
+                        ),
+                        Text(
+                          "Puan Durumu",
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFF7D7C7C)),
+                        )
+                      ],
+                    ),
                   ),
                   Column(children: [
                     Icon(

@@ -147,7 +147,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          
           Container(
             width: double.infinity,
             height: 65,
@@ -159,12 +158,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushNamed(context, '/news');
-                        },
-                        child: Icon(Icons.feed_outlined, color: Color(0xFFB80000)),
-                      ),
+                      Icon(Icons.feed_outlined, color: Color(0xFFB80000)),
                       Text(
                         "Haberler",
                         style: TextStyle(
@@ -176,14 +170,9 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushNamed(context, '/matches');
-                        },
-                        child: Icon(
-                          Icons.sports_soccer,
-                          color: Color(0xFF7D7C7C),
-                        ),
+                      Icon(
+                        Icons.sports_soccer,
+                        color: Color(0xFF7D7C7C),
                       ),
                       Text(
                         "Haftanın Maçları",
@@ -195,46 +184,42 @@ class HomeScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                  Column(
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushNamed(context, '/standings');
-                        },
-                        child: Icon(
+                  InkWell(
+                    onTap: () => Navigator.pushNamed(context, '/puan'),
+                    child: Column(
+                      children: [
+                        Icon(
                           Icons.format_list_numbered_outlined,
                           color: Color(0xFF7D7C7C),
                         ),
-                      ),
-                      Text(
-                        "Puan Durumu",
-                        style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF7D7C7C)),
-                      )
-                    ],
+                        Text(
+                          "Puan Durumu",
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFF7D7C7C)),
+                        )
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushNamed(context, '/stats');
-                        },
-                        child: Icon(
+                  InkWell(
+                    onTap: () => Navigator.pushNamed(context, '/stats'),
+                    child: Column(
+                      children: [
+                        Icon(
                           Icons.equalizer,
                           color: Color(0xFF7D7C7C),
                         ),
-                      ),
-                      Text(
-                        "İstatistikler",
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xFF7D7C7C),
-                        ),
-                      )
-                    ],
+                        Text(
+                          "İstatistikler",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF7D7C7C),
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
