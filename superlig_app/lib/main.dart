@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'fiksturScreen.dart';
-
 import 'package:superlig_app/fiksturScreen.dart';
-
 import 'screens/homeScreen.dart';
 import 'screens/puanDurumu.dart';
 import 'screens/statsScreen.dart';
