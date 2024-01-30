@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 void main() {
   runApp(MyApp());
 }
@@ -192,14 +190,14 @@ class FiksturScreen extends StatelessWidget {
                       children: [
                         Icon(
                           Icons.sports_soccer,
-                          color: Color(0xFF7D7C7C),
+                          color: Color(0xFFB80000),
                         ),
                         Text(
                           "Haftanın Maçları",
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
-                            color: Color(0xFF7D7C7C),
+                            color: Color(0xFFB80000),
                           ),
                         ),
                       ],
@@ -229,14 +227,14 @@ class FiksturScreen extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.equalizer,
-                            color: Color(0xFFB80000),
+                            color: Color(0xFF7D7C7C),
                           ),
                           Text(
                             "İstatistikler",
                             style: TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFFB80000),
+                              color: Color(0xFF7D7C7C),
                             ),
                           ),
                         ],
@@ -253,10 +251,12 @@ class FiksturScreen extends StatelessWidget {
   }
 }
 
-
-Widget buildMatchList(List<String> matches, {bool isBlackBackground = false, bool isWhiteBackground = false}) {
+Widget buildMatchList(List<String> matches,
+    {bool isBlackBackground = false, bool isWhiteBackground = false}) {
   return Container(
-    color: isBlackBackground ? Colors.black : (isWhiteBackground ? Colors.white : Colors.grey),
+    color: isBlackBackground
+        ? Colors.black
+        : (isWhiteBackground ? Colors.white : Colors.grey),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: matches
@@ -264,13 +264,15 @@ Widget buildMatchList(List<String> matches, {bool isBlackBackground = false, boo
                 padding: EdgeInsets.all(8.0),
                 child: match.startsWith('-')
                     ? Divider(
-                        color: Color.fromARGB(255, 0, 0, 0), // Divider rengini siyah yapabilirsiniz
+                        color: Color.fromARGB(255, 0, 0,
+                            0), // Divider rengini siyah yapabilirsiniz
                         height: 1.0,
                       )
                     : Text(
                         match,
                         style: TextStyle(
-                          color: isBlackBackground ? Colors.white : Colors.black,
+                          color:
+                              isBlackBackground ? Colors.white : Colors.black,
                           fontSize: 16.0,
                         ),
                       ),
